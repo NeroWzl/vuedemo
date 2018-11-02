@@ -118,7 +118,6 @@
 		created(){
 			axios.get('../../static/data.json')
 	        .then(res => {
-//	        	console.log(res)
 	            this.tableData1 = res.data.tableData1;
 	            this.tableData2 = res.data.tableData2;
 	            this.hotPros = res.data.hotPros;
@@ -163,9 +162,7 @@
 					let asd=0
 					this.tableData1.map(function(v){
 						that.num += (v.count*v.price)
-//						console.log()
 					})
-//					console.log(that.num)
 				}else if(this.sel==1){
 					
 				}
